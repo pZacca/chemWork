@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Geometria Molecular</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="/jmol/jsmol/jsmol/JSmol.min.js"></script>
+    <script src="/jmol/jsmol/jsmol/js/Jmol2.js"></script>
+    <script>
+      jmolInitialize("/jmol/jsmol/jsmol");
+    </script>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <img src="unifesplogo1.png" class="logo" alt="Unifesp Logo">    
+      </div>
+
+      <div id="navbarExemplo" class="navbar-menu">
+        <div class="navbar-item">
+          <a href="index0.html" class="navbar-item">Sobre nós</a>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Geometrias
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="index1.html">
+              Linear
+            </a>
+            <a class="navbar-item" href="index2.html">
+              Angular
+            </a>
+            <a class="navbar-item is-active" href="index3.html">
+              Pirâmide trigonal
+            </a>
+            <a class="navbar-item" href="index4.html">
+              Em T
+            </a>
+            <a class="navbar-item" href="index5.html">
+              Quadrada Planar
+            </a>
+            <a class="navbar-item" href="index6.html">
+              Gangorra
+            </a>
+            <a class="navbar-item" href="index7.html">
+              Pirâmide Quadrada
+            </a>
+            <a class="navbar-item" href="index8.html">
+              Pirâmide Pentagonal
+            </a>
+            <a class="navbar-item" href="index9.html">
+              Pentagonal Planar
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <header class="card-header has-text-centered">
+            <h1 class="card-header-title has-text-centered">
+              Geometria de Pirâmide Trigonal
+            </h1>
+          </header>
+          <div class="card-content is-centered">
+            <div class="content">
+              <p><b>Molécula de exemplo:</b> NH<sub>3</sub></p>
+              <br />
+              <div id="container is-widescreen">
+                <script>
+                  jmolApplet(
+                    600,
+                    'load molecules-mol-format/nh3.mol; select *; color cpk; wireframe .1; select hydrogen; spacefill .2; select nitrogen; spacefill .3; select *; rotate x 0; rotate z 0; rotate y 20; zoom 150; background white; translate y 10; select nitrogen; lcaocartoon translucent; lcaocartoon scale 1.2; lcaocartoon "sp3d"; lcaocartoon opaque; lcaocartoon color blue; lcaocartoon lonepair "sp3d"; center nitrogen; frank off; set ambient 70; moveto 1 1 0 0 -60 150; '
+                  );
+                </script>
+                <br />
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

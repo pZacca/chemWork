@@ -1,0 +1,98 @@
+-------------------------------------------------------------
+----------------------- !PROPERTIES! ------------------------
+-------------------------------------------------------------
+# -----------------------------------------------------------
+$ SCF_Energy
+   description: The SCF energy
+   geom. index: 1
+   prop. index: 1
+        SCF Energy:     -721.8187313435
+# -----------------------------------------------------------
+$ Mayer_Pop
+   description: The Mayer population analysis
+   geom. index: 1
+   prop. index: 1
+     Number of atoms                     : 5
+     Threshold for printing              : 0.1000000
+     Number of bond orders printed       : 4
+  NA   - Mulliken gross atomic population
+  ZA   - Total nuclear charge
+  QA   - Mulliken gross atomic charge
+  VA   - Mayer's total valence
+  BVA  - Mayer's bonded valence
+  FA   - Mayer's free valence
+  ATOM       NA         ZA         QA         VA         BVA        FA
+  0   0     8.6267     9.0000     0.3733     1.1647     1.1647    -0.0000
+  1   0    23.4931    26.0000     2.5069     4.1072     4.1072    -0.0000
+  2   0     8.6267     9.0000     0.3733     1.1647     1.1647    -0.0000
+  3   0     8.6267     9.0000     0.3733     1.1647     1.1647    -0.0000
+  4   0     8.6267     9.0000     0.3733     1.1647     1.1647    -0.0000
+      Bond orders larger than 0.1000000
+           Atom A     A.N. of A          Atom B    A.N. of B              Bond order
+                0             9               1           54                1.026812
+                1            54               2            9                1.026813
+                1            54               3            9                1.026797
+                1            54               4            9                1.026814
+# -----------------------------------------------------------
+$ MP2_Energies
+   description: The MP2 energies
+   geom. index: 1
+   prop. index: 1
+        Reference Energy:       -721.8187313435
+        Correlation Energy:       -1.2900823468
+        Total MP2 Energy:       -723.1088136903
+# -----------------------------------------------------------
+$ Calculation_Info
+   description: Details of the calculation
+   geom. index: 1
+   prop. index: 1
+     Multiplicity:                          1
+     Charge:                                4
+     number of atoms:                       5
+     number of electrons:                   0
+     number of frozen core electrons:       1
+     number of correlated electrons:        0
+     number of basis functions:             106
+     number of aux C basis functions:       0
+     number of aux J basis functions:       0
+     number of aux JK basis functions:      0
+     number of aux CABS basis functions:    0
+     Total Energy                           -723.108814
+# -----------------------------------------------------------
+$ SCF_Electric_Properties
+   description: The SCF Calculated Electric Properties
+   geom. index: 1
+   prop. index: 1
+       Filename                          : XeF4.scfp 
+       Do Dipole Moment Calculation      : true 
+       Do Quadrupole Moment Calculation  : false 
+       Do Polarizability Calculation     : false 
+** Dipole moment part of electric properties **
+        Magnitude of dipole moment (Debye) :        0.0001149706
+        Electronic Contribution:
+                  0    
+      0       0.000034
+      1       0.000076
+      2      -0.000098
+        Nuclear Contribution:
+                  0    
+      0      -0.000000
+      1      -0.000063
+      2       0.000125
+        Total Dipole moment:
+                  0    
+      0       0.000034
+      1       0.000013
+      2       0.000027
+# -------------------------------------------------------------
+----------------------- !GEOMETRIES! ------------------------
+# -------------------------------------------------------------
+------------------------ !GEOMETRY! -------------------------
+    Number of atoms:    5 
+    Geometry Index:     1 
+    Coordinates:
+               0 F      1.079780000000   -0.427640000000    0.492950000000
+               1 Xe     2.912200000000   -0.035440000000    0.073500000000
+               2 F      3.001650000000    1.588050000000   -0.948160000000
+               3 F      3.910090000000    0.176290000000    1.700440000000
+               4 F      3.657280000000   -1.478470000000   -0.951210000000

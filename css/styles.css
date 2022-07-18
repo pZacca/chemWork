@@ -1,0 +1,56 @@
+@import "../node_modules/bulma/css/bulma.css";
+
+html {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(11,113,57,0.14329481792717091) 0%, rgba(0,64,0,0.10688025210084029) 100%);
+  background-attachment: fixed
+}
+
+.navbar {
+  background-image: linear-gradient(to bottom, #ffffff,#f8f8f8, #ebebeb);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  margin: 10px;
+}
+
+/* Centralização de moléculas */
+#jmolApplet0_appletinfotablediv {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: auto;
+}
+
+.card-header-title {
+  justify-content: space-around;
+}
+
+.card-content.is-centered {
+  background-image: linear-gradient(to bottom, #ffffff,#ffffff,#fafafa,#f8f8f8, #e2e2e2);
+}
+
+h1 {
+  background-image: linear-gradient(to bottom, #ffffff, #ebebeb);
+}
+
+a {
+  color: green;
+  text-align: center;
+}
+
+p {
+  padding-left: 60px;
+  padding-top: 30px;
+}
+
+.logo{
+  margin-top: 10px;
+  max-width: 20%;
+  margin-left: 5%;
+}
+
+.about-us > * {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
