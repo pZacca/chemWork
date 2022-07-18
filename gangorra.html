@@ -72,12 +72,24 @@
             <div class="content">
               <p><b>Molécula de exemplo:</b> SF<sub>4</sub></p>
               <br />
+              <p class="has-text-centered">Sem orbitais moleculares:</p>
               <div id="container is-widescreen">
                 <script>
                   jmolApplet(
                     600,
                     'load molecules-mol-format/sf4.mol; set antialiasdisplay true; select @1; lcaocartoon scale 1.4 color yellow translucent create "sp3de"; hide @6; lcaocartoon lonepair scale 1.6 color blue create "sp3de";'
                   );
+                </script>
+                <br />
+                <br />
+              </div>
+              <p class="has-text-centered">Com orbitais moleculares:</p>
+              <div id="container is-widescreen">
+                <script>
+                  jmolApplet(
+                    600,
+                    'load molecules/Gangorra/SF4.molden.input; mo HOMO;')
+	              </script>
                 </script>
                 <br />
                 <br />
