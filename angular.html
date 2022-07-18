@@ -72,11 +72,23 @@
             <div class="content">
               <p><b>Molécula de exemplo:</b> H<sub>2</sub>O</p>
               <br />
+              <p class="has-text-centered">Sem orbitais moleculares:</p>
               <div id="container is-widescreen">
                 <script>
                   jmolApplet(
                     600,
                     'load molecules-mol-format/h2o.mol; select *; color cpk; wireframe .1; select hydrogen; spacefill .2; select oxygen; spacefill .3; select *; rotate x -60; rotate z 0; rotate y 20; zoom 160; background white; translate y 10; select oxygen; lcaocartoon translucent; lcaocartoon scale 1.2; lcaocartoon "sp3d"; lcaocartoon "sp3c"; lcaocartoon opaque; lcaocartoon color blue; lcaocartoon lonepair "sp3d"; lcaocartoon lonepair "sp3c";center oxygen; frank off; set ambient 60;')
+	              </script>
+                </script>
+                <br />
+                <br />
+              </div>
+              <p class="has-text-centered">Com orbitais moleculares:</p>
+              <div id="container is-widescreen">
+                <script>
+                  jmolApplet(
+                    600,
+                    'load molecules/Angular/h2o.molden.input; mo HOMO;')
 	              </script>
                 </script>
                 <br />
