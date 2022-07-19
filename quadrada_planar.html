@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Geometria Molecular</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="/jmol/jsmol/jsmol/JSmol.min.js"></script>
+    <script src="/jmol/jsmol/jsmol/js/Jmol2.js"></script>
+    <script>
+      jmolInitialize("/jmol/jsmol/jsmol");
+    </script>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <img src="unifesplogo1.png" class="logo" alt="Unifesp Logo">    
+      </div>
+
+      <div id="navbarExemplo" class="navbar-menu">
+        <div class="navbar-item">
+          <a href="quem_somos.html" class="navbar-item">Sobre nós</a>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Geometrias
+          </a>
+  
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="linear.html">
+              Linear
+            </a>
+            <a class="navbar-item" href="angular.html">
+              Angular
+            </a>
+            <a class="navbar-item" href="piramide_trigonal.html">
+              Pirâmide trigonal
+            </a>
+            <a class="navbar-item" href="t.html">
+              Em T
+            </a>
+            <a class="navbar-item is-active" href="quadrada_planar.html">
+              Quadrada Planar
+            </a>
+            <a class="navbar-item" href="gangorra.html">
+              Gangorra
+            </a>
+            <a class="navbar-item" href="piramide_quadrada.html">
+              Pirâmide Quadrada
+            </a>
+            <a class="navbar-item" href="piramide_pentagonal.html">
+              Pirâmide Pentagonal
+            </a>
+            <a class="navbar-item" href="pentagonal_planar.html">
+              Pentagonal Planar
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="container">
+        <div class="card">
+          <header class="card-header has-text-centered">
+            <h1 class="card-header-title has-text-centered">
+              Geometria Quadrada Planar
+            </h1>
+          </header>
+          <div class="card-content is-centered">
+            <div class="content">
+              <p><b>Molécula de exemplo:</b> XeF<sub>4</sub></p>
+              <br />
+              <p class="has-text-centered">Sem orbitais moleculares:</p>
+              <div id="container is-widescreen">
+                <script>
+                  jmolApplet(
+                    600,
+                    'load molecules-mol-format/xef4.mol; set antialiasdisplay true; select @1; lcaocartoon scale 1.4 color yellow translucent create "sp3d2a" create "sp3d2b"; hide @2, @3; lcaocartoon lonepair scale 1.6 color blue create "sp3d2a" create "sp3d2b"'
+                  );
+                </script>
+                <br />
+                <br />
+              </div>
+              <div id="container is-widescreen">
+                <script>
+                  jmolApplet(
+                    600,
+                    'load molecules/QuadradaPlanar/XeF4.molden.input; mo HOMO;')
+	              </script>
+                </script>
+                <br />
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
