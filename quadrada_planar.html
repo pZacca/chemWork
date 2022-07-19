@@ -72,12 +72,23 @@
             <div class="content">
               <p><b>Molécula de exemplo:</b> XeF<sub>4</sub></p>
               <br />
+              <p class="has-text-centered">Sem orbitais moleculares:</p>
               <div id="container is-widescreen">
                 <script>
                   jmolApplet(
                     600,
                     'load molecules-mol-format/xef4.mol; set antialiasdisplay true; select @1; lcaocartoon scale 1.4 color yellow translucent create "sp3d2a" create "sp3d2b"; hide @2, @3; lcaocartoon lonepair scale 1.6 color blue create "sp3d2a" create "sp3d2b"'
                   );
+                </script>
+                <br />
+                <br />
+              </div>
+              <div id="container is-widescreen">
+                <script>
+                  jmolApplet(
+                    600,
+                    'load molecules/QuadradaPlanar/XeF4.molden.input; mo HOMO;')
+	              </script>
                 </script>
                 <br />
                 <br />
