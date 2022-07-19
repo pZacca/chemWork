@@ -12,6 +12,11 @@ html {
   justify-content: center;
 }
 
+.navbar-menu {
+  justify-content: flex-end;
+  margin-right: 6%;
+}
+
 .logo {
   margin: 10px;
 }
@@ -52,7 +57,7 @@ p {
 .logo{
   margin-top: 10px;
   max-width: 20%;
-  margin-left: 5%;
+  margin-left: 20%;
 }
 
 .about-us > * {
