@@ -72,12 +72,24 @@
             <div class="content">
               <p><b>Molécula de exemplo:</b> BrF<sub>5</sub></p>
               <br />
+              <p class="has-text-centered">Sem orbitais moleculares:</p>
               <div id="container is-widescreen">
                 <script>
                   jmolApplet(
                     600,
                     'load molecules-mol-format/brf5.mol; set antialiasdisplay true; select @1; lcaocartoon scale 1.4 color yellow translucent create "sp3d2a"; hide @2; lcaocartoon scale 1.6 lonepair color blue create "sp3d2a";'
                   );
+                </script>
+                <br />
+                <br />
+              </div>
+              <p class="has-text-centered">Com orbitais moleculares:</p>
+              <div id="container is-widescreen">
+                <script>
+                  jmolApplet(
+                    600,
+                    'load molecules/PiramideQuadrada/BrF5.molden.input; mo HOMO;')
+	              </script>
                 </script>
                 <br />
                 <br />
